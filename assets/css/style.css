@@ -10,24 +10,13 @@ body {
   box-sizing: border-box;
 }
 
-/* general */
-
-.container {
+header {
   width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  clear: both;
+  background-color: #ffffff;
 }
-
-h1,
-h2,
-h3,
-p {
-  margin-bottom: 20px;
-}
-
-p:last-child {
-  margin-bottom: 0;
+.header-container {
+  width: 960px;
+  margin: auto;
 }
 
 h1,
@@ -36,18 +25,6 @@ h3 {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: 700;
   color: #4aaaa5;
-}
-
-h1 {
-  padding-bottom: 20px;
-  font-size: 30px;
-  line-height: 49px;
-  border-bottom: 3px solid #ddd;
-}
-
-h2,
-h3 {
-  font-size: 22px;
 }
 
 /* header */
@@ -63,38 +40,21 @@ h3 {
   border-bottom: 2px solid #ccc;
 }
 
-#logo {
-  float: left;
-  width: 250px;
-  height: 90px;
+.navbar-brand {
+  
+  
+  
+  
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 90px;
-  color: #fff;
+  color: #ffffff !important;
   text-align: center;
   text-decoration: none;
   background: #4aaaa5;
 }
 
-nav {
-  float: right;
-  margin-top: 25px;
-}
-
-nav a {
-  display: inline-block;
-  padding-left: 15px;
-  margin-left: 15px;
-  line-height: 18px;
-  color: #999;
-  text-decoration: none;
-  border-left: 1px solid #efefef;
-}
-
-nav a:first-child {
-  border-left: 0 none;
-}
 
 /* footer */
 
@@ -216,115 +176,4 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
-}
-
-/* Media queries */
-
-
-@media screen and (max-width: 980px ) {
-  .container{
-
-    padding: 0 20px;
-    max-width: 768px;
-
-  }
-
-  #main-container {
-    padding-top: 130px;
-  
-  }
-
-  .main-section {
-    max-width: 480px;
-  }
-
-  .work {
-    width: 100%;
-  }
-
-  .auth-image{
-    width: 100%;  
-    margin-bottom: 20px;
-
-  }  
-}
-
-  @media screen and (max-width: 768px ) {
-   
-    .main-section {
-      max-width: 100%;
-     
-    }
-  
-  
-    #main-container {
-      overflow: auto;
-    
-    }
-  
-  
-    .work {
-      width: 47%;
-      margin-bottom: 10px;
-    }
-
-    .work:nth-child(even) {
-
-      margin-right: 0;
-    }
-
-    .work:nth-child(odd) {
-      float: right;
-    }
-  
-    .auth-image {
-      width: 50%;  
-    
-  
-    }  
-  
-  }
-
-
-
-@media screen and (max-width: 640px) {
-   #masthead {
-    position:static;
-    margin-bottom: 20px;
-  }
-  
-  
-  header.container {
-   padding: 0;
-  }
-
-  #logo {
-    width: 100%;
-  }
-  
-
- .work {
-  width: 100%;
-}
-
-.auth-image {
-  width: 100%;
-}
-
-  nav {
-    text-align: center;
-    width: 100%;
-    margin: 15px 0;
-  }
-
-  nav a {
-    width: 30%;
-    padding-left: 0;
-    margin-left: 0;
-
-  }
-
-  #main-container {
-    padding-top: 0;
-}
 }
